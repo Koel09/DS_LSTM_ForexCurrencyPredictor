@@ -1,1 +1,11 @@
-
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+papermill
+nbformat
+tensorflow-metal
+tensorflow-macos
