@@ -7,5 +7,4 @@ seaborn
 jupyter
 papermill
 nbformat
-tensorflow-metal
-tensorflow-macos
+tensorflow
