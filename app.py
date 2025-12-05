@@ -66,7 +66,8 @@ if st.button("Run Notebook"):
             Data_path=dataset_file,
             Model_path=model_file
         ),
-        kernel_name="tf310"
+        # kernel_name="tf310"
+        kernel_name="python3"
     )
 
     st.success("Notebook executed!")
