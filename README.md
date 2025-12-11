@@ -1,8 +1,8 @@
 # 🚀 Build an End-to-End Machine Learning Project: Forex Currency Prediction
 
-Welcome to this hands-on, industry-style machine learning project! In this tutorial, you’ll go from raw data to a deployed application that forecasts foreign exchange rates for multiple currencies.
+Welcome to this hands-on, industry-style machine learning project! In this I built application that forecasts foreign exchange rates for multiple currencies.
 
-You’ll use:
+I’ll use:
 - 📊 Jupyter Notebook for exploration and modeling  
 - 🧠 Multiple ML algorithms for comparison  
 - 💻 Streamlit for web app development  
@@ -12,18 +12,20 @@ You’ll use:
 
 ## 📁 Project Structure
 
-| File/Folder      | Description                                                  |
-|------------------|--------------------------------------------------------------|
-| `analysis.ipynb` | 🔬 Your sandbox for EDA and predictive modeling              |
-| `app.py`         | 🎯 Streamlit app UI and logic                                 |
-| `data/`          | 📂 Folder containing the Excel dataset                        |
-| `models/`        | 📦 Directory (you'll create this) to store saved models       |
-| `Dockerfile`        | This file (you'll create this) to dockerise your python application so that it is ready for deployment     |
-| `requirements.txt`        | This file contains all the dependencies of the project (make sure to update it after you install additional libraries)     |
+| File/Folder                                           | Description                                                         |
+|-------------------------------------------------------|---------------------------------------------------------------------|
+| `ForexCurrencyPredictor_LSTM_using_saved_model.ipynb` | 🔬 Your sandbox for EDA and predictive modeling                     |
+| `app.py`                                              | 🎯 Streamlit app UI and logic                                       |
+| `data/`                                               | 📂 Folder containing the Excel dataset                              |
+| `models/`                                             | 📦 Directory (you'll create this) to store saved models             |
+| `Dockerfile`                                          | This file (you'll create this) to dockerise your python 
+                                                                    application so that it is ready for deployment            |
+| `requirements.txt`                                    | This file contains all the dependencies of the project 
+                                                          (make sure to update it after you install additional libraries)     |
 
 ---
 
-## 🧪 Step 1: Data Analysis & Preprocessing (`analysis.ipynb`)
+## 🧪 Step 1: Data Analysis & Preprocessing (`ForexCurrencyPredictor_LSTM_using_saved_model.ipynb`)
 
 Start your journey in the Jupyter Notebook.
 
@@ -44,7 +46,7 @@ Your goal is to **compare several time-series forecasting models** and pick the 
 - **Prophet** – handles trends and seasonality well  
 - **AutoTS** – automates model selection  
 - **XGBoost / LightGBM** – can work with time features  
-- **LSTM** – deep learning approach for sequential data  
+- **LSTM** – deep learning approach for sequential data (used this for this project)
 
 For each model:
 - Split your data into train and test (e.g., last 60 days as test)
@@ -71,7 +73,7 @@ Once you’ve selected the best model for a currency, save it for use in the web
 
 ## 💻 Step 4: Build the Streamlit App (`app.py`)
 
-The Streamlit app serves as your frontend for interactive predictions.
+The Streamlit app serves as our frontend for interactive predictions.
 
 ### Key features:
 - Dropdown to select currency  
@@ -79,7 +81,7 @@ The Streamlit app serves as your frontend for interactive predictions.
 - Uses your saved model to generate predictions  
 - Displays forecast table and chart  
 
-> ✅ Make sure `make_forecast()` dynamically loads the correct model based on user selection.
+> ✅ Make sure solution dynamically loads the correct model based on user selection.
 
 Run the streamlit app using `streamlit run app.py` (make sure to install dependencies from requirements.txt first.)
 ---
