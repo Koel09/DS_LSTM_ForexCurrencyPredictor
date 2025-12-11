@@ -18,10 +18,8 @@ I’ll use:
 | `app.py`                                              | 🎯 Streamlit app UI and logic                                       |
 | `data/`                                               | 📂 Folder containing the Excel dataset                              |
 | `models/`                                             | 📦 Directory (you'll create this) to store saved models             |
-| `Dockerfile`                                          | This file (you'll create this) to dockerise your python 
-                                                                    application so that it is ready for deployment            |
-| `requirements.txt`                                    | This file contains all the dependencies of the project 
-                                                          (make sure to update it after you install additional libraries)     |
+| `Dockerfile`                                          | This file (you'll create this) to dockerise your python application so that it is ready for deployment            |
+| `requirements.txt`                                    | This file contains all the dependencies of the project (make sure to update it after you install additional libraries)     |
 
 ---
 
